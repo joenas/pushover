@@ -1,14 +1,3 @@
 #!/usr/bin/env ruby
 require "pushover"
-
-# unless ARGV.empty?
-#   pushover = Pushover::Pushover.new
-#   if pushover.respond_to? ARGV[0]
-#     pushover.send ARGV.shift.to_sym, ARGV
-#   else
-#     pushover.say ARGV[0]
-#   end
-# else
-#   Pushover::Pushover.start
-# end
 Pushover::Pushover.start
